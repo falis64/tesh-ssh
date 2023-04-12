@@ -34,3 +34,16 @@ Hi 'name'! You've successfully authenticated, but GitHub does not provide shell 
 Step 4: Pushing files to GitHub using SSH
 Go to GitHub and make a new repository or rename an old one
 Don't forget to select SSH
+
+Step 5: Pushing files to GiitHub using SSH
+- You can use touch README.md to create a README file within this repository. You can then use cat README.md - cat which is used to display the contents of files and in our case it'll be the README.md. 
+- After the README.md is completed, we can initialise a git repo using git-init. 
+- To check if the file is untracked, use git status and if so we can use git add to add all the content.
+- After this, we can use `git commit -m xxx` to state all changes that have been made
+Now we can use the code that is already provided on the Setup page
+```
+git branch -M main
+git remote add origin git@github.com:<githubusername>test-ssh.git
+git push -u origin main
+```
+Once this has been pushed, you can see the commits have been noted on GitHub.
